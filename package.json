@@ -1,12 +1,12 @@
 {
-  "name": "aframe-environment-component",
+  "name": "aframe-ground-component",
   "version": "1.1.0",
-  "description": "Infinite environments for your A-Frame VR scene in just one file.",
+  "description": "Infinite grounds for your A-Frame VR scene in just one file.",
   "main": "index.js",
-  "cdn": "dist/aframe-environment-component.min.js",
+  "cdn": "dist/aframe-ground-component.min.js",
   "scripts": {
-    "dev": "budo index.js:dist/aframe-environment-component.min.js --port 7000 --live --open",
-    "dist": "webpack index.js dist/aframe-environment-component.js && webpack -p index.js dist/aframe-environment-component.min.js",
+    "dev": "budo index.js:dist/aframe-ground-component.min.js --port 7000 --live --open",
+    "dist": "webpack index.js dist/aframe-ground-component.js && webpack -p index.js dist/aframe-ground-component.min.js",
     "lint": "semistandard -v | snazzy",
     "prepublish": "npm run dist",
     "ghpages": "ghpages",
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/feiss/aframe-environment-component.git"
+    "url": "git+https://github.com/feiss/aframe-ground-component.git"
   },
   "keywords": [
     "aframe",
@@ -26,14 +26,14 @@
     "vr",
     "mozvr",
     "webvr",
-    "environment"
+    "ground"
   ],
   "author": "Diego F. Goberna <github@feiss.be>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/feiss/aframe-environment-component/issues"
+    "url": "https://github.com/feiss/aframe-ground-component/issues"
   },
-  "homepage": "https://github.com/feiss/aframe-environment-component#readme",
+  "homepage": "https://github.com/feiss/aframe-ground-component#readme",
   "devDependencies": {
     "aframe": "*",
     "browserify": "^13.0.0",
