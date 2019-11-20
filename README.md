@@ -7,7 +7,7 @@ This component provides various sweet looking options for ground in an [A-Frame]
 Make sure you are using __A-Frame 0.9.2__ or later. Then just include `aframe-ground-component.js` in your HTML:
 
 ```html
-  <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
+  <script src="https://unpkg.com/aframe-ground-component@0.0.1/dist/aframe-ground-component.min.js"></script>
 ```
 
 and add the `ground` component to an entity:
@@ -28,7 +28,7 @@ The previous code will setup a default scene, but you have a bunch of already pr
   <a-entity ground="preset: <name of the preset>"></a-entity>
 ```
 
-You can view and try all the presets in the **[aframe-ground-component Test Page](http://feiss.github.io/aframe-ground-component/)**. The current list of presets are listed in the next section.
+You can view and try all the presets in the **[aframe-ground-component Test Page](https://kfarr.github.io/aframe-ground-component/)**. The current list of presets are listed in the next section.
 
 
 ## Parameters
@@ -36,7 +36,7 @@ You can view and try all the presets in the **[aframe-ground-component Test Page
 Apart from using a preset, you can tweak the ground with many parameters, like this:
 
 ```html
-  <a-entity ground="lightPosition: 1 5 -2; groundColor: #445"></a-entity>
+  <a-entity ground="groundColor: #445"></a-entity>
 ```
 
 You can also select a preset but change some of its parameters:
@@ -64,7 +64,7 @@ This is the list of the available parameters.
 | **grid**    | 'none'  | Valid values: `none`, `1x1`, `2x2`, `crosses`, `dots`, `xlines`, `ylines`. 1x1 and 2x2 are rectangular grids of 1 and 2 meters side, respectively.  |
 | **gridColor** | '#ccc' | Color of the grid. |
 
-The best way to work with them is to press `ctrl-alt-i` to open the [inspector](https://aframe.io/docs/master/introduction/visual-inspector-and-dev-tools.html#a-frame-inspector), search for 'environment' in the filter box and select it, and tweak the parameters while checking the changes in realtime. When you are happy, you can use the `Copy attributes` button or even better, copy the attributes logged in the browser's dev tools console.
+The best way to work with them is to press `ctrl-alt-i` to open the [inspector](https://aframe.io/docs/master/introduction/visual-inspector-and-dev-tools.html#a-frame-inspector), search for 'ground' in the filter box and select it, and tweak the parameters while checking the changes in realtime. When you are happy, you can use the `Copy attributes` button or even better, copy the attributes logged in the browser's dev tools console.
 
 ## Performance
 This component removes all dressings used in environment component so it should perform OK.
