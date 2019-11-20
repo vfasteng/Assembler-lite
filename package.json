@@ -1,6 +1,6 @@
 {
   "name": "aframe-ground-component",
-  "version": "1.1.0",
+  "version": "0.0.1",
   "description": "Infinite grounds for your A-Frame VR scene in just one file.",
   "main": "index.js",
   "cdn": "dist/aframe-ground-component.min.js",
@@ -28,7 +28,7 @@
     "webvr",
     "ground"
   ],
-  "author": "Diego F. Goberna <github@feiss.be>",
+  "author": "Kieran Farr <kieran.farr@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/feiss/aframe-ground-component/issues"
