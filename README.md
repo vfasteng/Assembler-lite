@@ -1,8 +1,10 @@
 # aframe-ground-component
 
-This is a fork of the [aframe-environment-component by Feiss](https://github.com/feiss/aframe-environment-component/)
-
 This component provides various sweet looking options for ground in an [A-Frame](http://aframe.io) VR scene (no sky, lights or dressings).
+
+This is a fork of the [aframe-environment-component by Feiss](https://github.com/feiss/aframe-environment-component/). The `environment` component is awesome, but sometimes dressings, sky and lighting is just not needed for your scene so I decided remove those other features and focus on a simpler version.
+
+There are 2 new parameters to add more control over ground placement height (`positionY`)and scale (`groundXZScale`). 
 
 Make sure you are using __A-Frame 0.9.2__ or later. Then just include `aframe-ground-component.js` in your HTML:
 
