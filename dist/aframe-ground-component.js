@@ -78,7 +78,7 @@
 
 	    grid: {default:'none', oneOf:['none', '1x1', '2x2', 'crosses', 'dots', 'xlines', 'ylines']},
 	    gridColor: {type: 'color', default: '#ccc'},
-	    positionY: {type: 'int', default: 0},
+	    positionY: {type: 'float', default: 0},
 	  },
 
 	  multiple: false,
