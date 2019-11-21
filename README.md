@@ -7,7 +7,7 @@ This component provides various sweet looking options for ground in an [A-Frame]
 Make sure you are using __A-Frame 0.9.2__ or later. Then just include `aframe-ground-component.js` in your HTML:
 
 ```html
-  <script src="https://unpkg.com/aframe-ground-component@0.0.1/dist/aframe-ground-component.min.js"></script>
+  <script src="https://unpkg.com/aframe-ground-component@0.0.2/dist/aframe-ground-component.min.js"></script>
 ```
 
 and add the `ground` component to an entity:
