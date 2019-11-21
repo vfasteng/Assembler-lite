@@ -7,7 +7,7 @@ This component provides various sweet looking options for ground in an [A-Frame]
 Make sure you are using __A-Frame 0.9.2__ or later. Then just include `aframe-ground-component.js` in your HTML:
 
 ```html
-  <script src="https://unpkg.com/aframe-ground-component@0.0.2/dist/aframe-ground-component.min.js"></script>
+  <script src="https://unpkg.com/aframe-ground-component@0.0.3/dist/aframe-ground-component.min.js"></script>
 ```
 
 and add the `ground` component to an entity:
@@ -58,6 +58,7 @@ This is the list of the available parameters.
 | **playArea** |  1    | Radius of the area in the center reserved for the player and the gameplay. The ground is flat in there and no objects are placed inside.|
 | **ground**  | 'hills' | Valid values: `none`, `flat`, `hills`, `canyon`, `spikes`, `noise`. Orography style. |
 | **groundYScale** | 3  | Maximum height (in meters) of ground's features (hills, mountains, peaks..) |
+| **groundXZScale** | 1  | Integer amount by which to scale the ground in X and Z axes |
 | **groundTexture**| 'none' | Valid values: `none`, `checkerboard`, `squares`, `walkernoise`|
 | **groundColor** | '#553e35'  | Main color of the ground |
 | **groundColor2**| '#694439'  | Secondary color of the ground. Used for textures, ignored if `groundTexture` is `none` |

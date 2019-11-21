@@ -71,13 +71,14 @@
 
 	    ground: {default: 'hills', oneOf:['none', 'flat', 'hills', 'canyon', 'spikes', 'noise']},
 	    groundYScale: {type: 'float', default: 3, min: 0, max: 50},
+	    groundXZScale: {type: 'float', default: 1},
 	    groundTexture: {default: 'none', oneOf:['none', 'checkerboard', 'squares', 'walkernoise']},
 	    groundColor:  {type: 'color', default: '#553e35'},
 	    groundColor2: {type: 'color', default: '#694439'},
 
 	    grid: {default:'none', oneOf:['none', '1x1', '2x2', 'crosses', 'dots', 'xlines', 'ylines']},
 	    gridColor: {type: 'color', default: '#ccc'},
-	    positionY: {default: 0},
+	    positionY: {type: 'int', default: 0},
 	  },
 
 	  multiple: false,
@@ -161,8 +162,6 @@
 	        )
 	    {
 	      this.updateGround(updateGroundGeometry);
-	      // set bounce light color to ground color
-	      if (this.hemilight) this.hemilight.setAttribute('light', {'groundColor': this.groundData.groundColor});
 	    }
 
 	    this.el.setAttribute('visible', this.groundData.active);
@@ -327,6 +326,10 @@
 
 	    // apply Y scale. There's no need to recalculate the geometry for this. Just change scale
 	    this.ground.setAttribute('scale', {z: this.groundData.groundYScale});
+
+	    this.ground.setAttribute('scale', {x: this.groundData.groundXZScale});
+	    this.ground.setAttribute('scale', {y: this.groundData.groundXZScale});
+
 
 	    // update ground, playarea and grid textures.
 	    var groundResolution = 2048;
