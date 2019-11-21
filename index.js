@@ -30,7 +30,8 @@ AFRAME.registerComponent('ground', {
     groundColor2: {type: 'color', default: '#694439'},
 
     grid: {default:'none', oneOf:['none', '1x1', '2x2', 'crosses', 'dots', 'xlines', 'ylines']},
-    gridColor: {type: 'color', default: '#ccc'}
+    gridColor: {type: 'color', default: '#ccc'},
+    positionY: {default: 0},
   },
 
   multiple: false,
@@ -66,6 +67,7 @@ AFRAME.registerComponent('ground', {
     this.groundMaterial = null;
     this.ground = document.createElement('a-entity');
     this.ground.setAttribute('rotation', '-90 0 0');
+    this.ground.setAttribute('position', '0 ' + this.data.positionY + ' 0');
     this.ground.classList.add('groundGround');
     this.ground.classList.add('ground');
     this.groundCanvas = null;

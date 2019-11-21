@@ -63,6 +63,8 @@ This is the list of the available parameters.
 | **groundColor2**| '#694439'  | Secondary color of the ground. Used for textures, ignored if `groundTexture` is `none` |
 | **grid**    | 'none'  | Valid values: `none`, `1x1`, `2x2`, `crosses`, `dots`, `xlines`, `ylines`. 1x1 and 2x2 are rectangular grids of 1 and 2 meters side, respectively.  |
 | **gridColor** | '#ccc' | Color of the grid. |
+| **positionY** | 0  | Specify custom height for ground |
+
 
 The best way to work with them is to press `ctrl-alt-i` to open the [inspector](https://aframe.io/docs/master/introduction/visual-inspector-and-dev-tools.html#a-frame-inspector), search for 'ground' in the filter box and select it, and tweak the parameters while checking the changes in realtime. When you are happy, you can use the `Copy attributes` button or even better, copy the attributes logged in the browser's dev tools console.
 
