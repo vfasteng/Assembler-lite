@@ -4,7 +4,7 @@ This component provides various sweet looking options for ground in an [A-Frame]
 
 This is a fork of the [aframe-environment-component by Feiss](https://github.com/feiss/aframe-environment-component/). The `environment` component is awesome, but sometimes dressings, sky and lighting is just not needed for your scene so I decided remove those other features and focus on a simpler version.
 
-There are 2 new parameters to add more control over ground placement height (`positionY`)and scale (`groundXZScale`). 
+There are 2 new parameters to add more control over ground placement height (`positionY`)and scale (`groundXZScale`).
 
 Make sure you are using __A-Frame 0.9.2__ or later. Then just include `aframe-ground-component.js` in your HTML:
 
@@ -67,12 +67,13 @@ This is the list of the available parameters.
 | **grid**    | 'none'  | Valid values: `none`, `1x1`, `2x2`, `crosses`, `dots`, `xlines`, `ylines`. 1x1 and 2x2 are rectangular grids of 1 and 2 meters side, respectively.  |
 | **gridColor** | '#ccc' | Color of the grid. |
 | **positionY** | 0  | Specify custom height for ground |
+| **resolution** | 64  | Specify the number of plane subdivisions (lower numbers reduce ground heightmap resolution and saves on triangle count) |
 
 
 The best way to work with them is to press `ctrl-alt-i` to open the [inspector](https://aframe.io/docs/master/introduction/visual-inspector-and-dev-tools.html#a-frame-inspector), search for 'ground' in the filter box and select it, and tweak the parameters while checking the changes in realtime. When you are happy, you can use the `Copy attributes` button or even better, copy the attributes logged in the browser's dev tools console.
 
 ## Performance
-This component removes all dressings used in environment component so it should perform OK.
+This component removes all dressings used in environment component so it should perform better than the original environment component. To get even better performance reduce `resolution` down to a lower number.
 
 ## Original Credit
 

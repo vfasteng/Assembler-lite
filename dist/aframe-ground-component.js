@@ -79,6 +79,7 @@
 	    grid: {default:'none', oneOf:['none', '1x1', '2x2', 'crosses', 'dots', 'xlines', 'ylines']},
 	    gridColor: {type: 'color', default: '#ccc'},
 	    positionY: {type: 'float', default: 0},
+	    resolution: {type: 'int', default: 64}
 	  },
 
 	  multiple: false,
@@ -245,7 +246,7 @@
 	  // updates ground attributes, and geometry if required
 	  updateGround: function (updateGeometry) {
 
-	    var resolution = 64; // number of divisions of the ground mesh
+	    var resolution = this.data.resolution; // number of divisions of the ground mesh
 
 	    if (updateGeometry) {
 	      var visibleground = this.groundData.ground != 'none';

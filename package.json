@@ -1,6 +1,6 @@
 {
   "name": "aframe-ground-component",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Infinite grounds for your A-Frame VR scene in just one file.",
   "main": "index.js",
   "cdn": "dist/aframe-ground-component.min.js",
