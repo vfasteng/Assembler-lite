@@ -2,13 +2,25 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>A-Frame Environment Component</title>
-    <meta name="description" content="A-Frame Environment Component">
-    <meta name="author" content="Diego F. Goberna">
-    <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
-    <script src="dist/aframe-environment-component.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Voces" rel="stylesheet">
+    <title>Assembler-lite</title>
+    <meta name="description" content="Assembler-lite">
+    <meta name="author" content="Michael Cornan">
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-physics-system@1.4.0/dist/aframe-physics-system.min.js"></script>
+    <script src="https://unpkg.com/super-hands/dist/super-hands.min.js"></script>
 
+    <script src="https://unpkg.com/aframe-event-set-component@^4.1.1/dist/aframe-event-set-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-physics-extras/dist/aframe-physics-extras.min.js"></script>
+    <script src="https://rawgit.com/feiss/aframe-environment-component/master/dist/aframe-environment-component.min.js"></script>
+	<script src="https://unpkg.com/aframe-extras/dist/aframe-extras.min.js"></script>
+    
+	<script src="https://rawgit.com/IdeaSpaceVR/aframe-ui-modal-component/master/dist/aframe-ui-modal-component.min.js"></script> 
+	<script src="https://unpkg.com/aframe-thumb-controls-component@1.1.0/dist/aframe-thumb-controls-component.min.js"></script>
+	<script src="https://unpkg.com/aframe-geometry-merger-component/dist/aframe-geometry-merger-component.min.js"></script> 
+	<script src="https://rawgit.com/fernandojsg/aframe-teleport-controls/master/dist/aframe-teleport-controls.min.js"></script> 
+	
+    <link href="https://fonts.googleapis.com/css?family=Voces" rel="stylesheet">
+    
     <style>
       h1 {
         position: absolute;
@@ -110,10 +122,10 @@
         }
       });
 
-      AFRAME.registerComponent('preset-switcher', {
+/*      AFRAME.registerComponent('preset-switcher', {
         init: function () {
           var el = this.el;
-          var presets = ['forest', 'default', 'contact', 'egypt', 'checkerboard', 'goaland', 'yavapai', 'goldmine', 'threetowers', 'poison', 'arches', 'tron', 'japan', 'dream', 'volcano', 'starry', 'osiris'];
+          var presets = ['contact', 'default', 'contact', 'egypt', 'checkerboard', 'goaland', 'yavapai', 'goldmine', 'threetowers', 'poison', 'arches', 'tron', 'japan', 'dream', 'volcano', 'starry', 'osiris'];
           var preset = 0;
 
           window.addEventListener('keydown', function (evt) {
@@ -141,7 +153,7 @@
             el.setAttribute('environment', {preset: presets[preset]});
           };
         }
-      });
+      });*/
     </script>
 
     <a-scene overlay-visibility>
